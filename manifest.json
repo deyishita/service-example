@@ -15,7 +15,7 @@
     "messages": "0.x"
   },
   "scripts": {
-    "prereleasy": "bash lint.sh"
+    "prereleasy": "yarn lint"
   },
   "credentialType": "absolute",
   "policies": [
