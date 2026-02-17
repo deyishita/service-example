@@ -9,6 +9,17 @@
     "status": {
       "path": "/_v/status/:code",
       "public": true
+    },
+
+    "DynamicPriceAPI": {
+      "path": "/dynamic-price/",
+      "public": true,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["post","get"]
+        }
+      ]
     }
   }
 }

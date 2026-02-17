@@ -4,6 +4,7 @@ import { LRUCache, method, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { status } from './middlewares/status'
 import { validate } from './middlewares/validate'
+import { resolvers } from './resolvers'
 
 const TIMEOUT_MS = 800
 
@@ -51,6 +52,10 @@ export default new Service({
     // `status` is the route ID from service.json. It maps to an array of middlewares (or a single handler).
     status: method({
       GET: [validate, status],
+    }),
+    DynamicPriceAPI: method({
+      GET: resolvers.Routes.DynamicPriceAPI,
+      POST: resolvers.Routes.DynamicPriceAPI,
     }),
   },
 })
