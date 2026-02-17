@@ -15,7 +15,7 @@
     "messages": "0.x"
   },
   "scripts": {
-    "prereleasy": "yarn lint"
+    "prereleasy": "vtex publish --verbose"
   },
   "credentialType": "absolute",
   "policies": [
