@@ -1,6 +1,6 @@
 {
   "name": "service-example",
-  "vendor": "vtex",
+  "vendor": "kitco",
   "version": "0.3.0",
   "title": "Service Example",
   "description": "Reference app for VTEX IO Services",
